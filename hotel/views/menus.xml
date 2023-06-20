@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <menuitem id="hotel_management_menu" name="Hotel Management" />
-    <!-- <menuitem
+    <menuitem
         id="hotel_configuration_menu"
         name="Configuration"
         sequence="20"
@@ -13,20 +13,20 @@
         sequence="6"
         parent="hotel_management_menu"
     />
-    <menuitem
+    <!-- <menuitem
         id="menu_open_hotel_floor_form_tree"
         name="Floor"
         action="open_hotel_floor_form_tree"
         sequence="21"
         parent="hotel_configuration_menu"
-    />
+    /> -->
     <menuitem
         id="menu_hotel_room"
         name="Room"
         parent="hotel.hotel_configuration_menu"
         sequence="2"
     />
-    <menuitem
+    <!-- <menuitem
         id="menu_open_hotel_room_type_form_tree"
         name="Room Types"
         action="open_hotel_room_type_form_tree"
@@ -52,14 +52,14 @@
         action="action_hotel_room_amenities_view_form"
         sequence="2"
         parent="hotel.menu_amenity"
-    />
+    /> -->
     <menuitem
         id="menu_open_hotel_room_form"
         name="Rooms"
         action="action_hotel_room_form"
         sequence="5"
         parent="hotel.menu_hotel_room"
-    /> -->
+    />
     <menuitem
         id="menu_all_folio"
         name="Folio"

@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_folio_room_line_user,hotel.folio_room_line.user,model_folio_room_line,hotel.group_hotel_user,1,1,1,1
 access_hotel_folio,hotel.folio.user,model_hotel_folio,hotel.group_hotel_user,1,1,1,0
 access_hotel_folio_line,hotel_folio.line.user,model_hotel_folio_line,hotel.group_hotel_user,1,1,1,0
 access_hotel_folio_manager,hotel.folio.manager,model_hotel_folio,hotel.group_hotel_manager,1,1,1,1
@@ -7,6 +8,8 @@ access_hotel_room_amenities_type,hotel.room_amenities_type.user,model_hotel_room
 access_hotel_room,hotel.room.user,model_hotel_room,hotel.group_hotel_user,1,1,1,0
 access_product_category,product.category.user,product.model_product_category,hotel.group_hotel_user,1,1,1,0
 access_product_product,product.product.user,product.model_product_product,hotel.group_hotel_user,1,1,1,0
+access_folio_room_line_manager,hotel.folio_room_line.manager,model_folio_room_line,hotel.group_hotel_manager,1,1,1,1
+access_folio_report_wizard,access_folio_report_wizard,model_folio_report_wizard,base.group_user,1,1,1,1
 access_hotel_room_type_manager,hotel.room_type.manager,model_hotel_room_type,hotel.group_hotel_manager,1,1,1,1
 access_hotel_service_line_manager,hotel_service.line.manager,model_hotel_service_line,hotel.group_hotel_manager,1,1,1,1
 access_hotel_room_amenities_type_manager,hotel.room_amenities_type.manager,model_hotel_room_amenities_type,hotel.group_hotel_manager,1,1,1,1

@@ -226,22 +226,24 @@
                                     <field name="state" invisible="1" />
                                 </tree>
                             </field>
-                            <group colspan="2" class="oe_subtotal_footer oe_right">
-                                <field
-                                    name="amount_untaxed"
-                                    sum="Untaxed amount"
-                                    widget='monetary'
-                                />
-                                <field name="amount_tax" widget='monetary' />
-                                <div class="oe_subtotal_footer_separator oe_inline">
-                                    <label for="amount_total" />
-                                </div>
-                                <field
-                                    name="amount_total"
-                                    nolabel="1"
-                                    sum="Total amount"
-                                    widget='monetary'
-                                />
+                            <group colspan="4">
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field
+                                        name="amount_untaxed"
+                                        sum="Untaxed amount"
+                                        widget='monetary'
+                                    />
+                                    <field name="amount_tax" widget='monetary' />
+                                    <div class="oe_subtotal_footer_separator oe_inline o_td_label">
+                                        <label for="amount_total" />
+                                    </div>
+                                    <field
+                                        name="amount_total"
+                                        nolabel="1"
+                                        sum="Total amount"
+                                        widget='monetary'
+                                    />
+                                </group>
                             </group>
                             <div class="oe_clear" />
                         </page>

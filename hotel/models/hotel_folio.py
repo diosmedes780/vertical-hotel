@@ -475,7 +475,7 @@ class HotelFolioLine(models.Model):
             line = line.with_company(line.company_id)
             fpos = (
                 line.order_id.fiscal_position_id
-                or line.order_id.fiscal_position_id.get_fiscal_position(
+                or line.order_id.fiscal_position_id._get_fiscal_position(
                     line.order_partner_id.id
                 )
             )
@@ -515,11 +515,9 @@ class HotelFolioLine(models.Model):
             pricelist=self.order_id.pricelist_id.id,
             uom=self.product_uom.id,
         )
-
+        
         vals.update(
-            name=self.order_line_id.get_sale_order_line_multiline_description_sale(
-                product
-            )
+            name=self.order_line_id._get_sale_order_line_multiline_description_sale()
         )
 
         self._compute_tax_id()
@@ -776,9 +774,7 @@ class HotelServiceLine(models.Model):
         )
 
         vals.update(
-            name=self.service_line_id.get_sale_order_line_multiline_description_sale(
-                product
-            )
+            name=self.service_line_id._get_sale_order_line_multiline_description_sale()
         )
 
         self._compute_tax_id()
