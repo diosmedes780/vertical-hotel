@@ -56,7 +56,7 @@
                     <notebook>
                         <page name="information_hotel_room" string="Information">
                             <group colspan="4" col="4">
-                                <group name="group_information_1">
+                                <group name="group_information_1" colspan="2">
                                     <field name="floor_id" string="Floor" />
                                     <field
                                         name="product_manager"
@@ -64,7 +64,7 @@
                                         string="Room Manager"
                                     />
                                 </group>
-                                <group name="group_information_2">
+                                <group name="group_information_2" colspan="2">
                                     <field name="room_categ_id" select="1" />
                                     <field name="capacity" />
                                     <field name="uom_id" invisible="1" />
